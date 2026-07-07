@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garuda X1 — Direct to Singapore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0a0a0a;
+    --gold:#c9a227;
+    --gold-bright:#e6c14d;
+    --cream:#f2ede1;
+    --grey:#8a8578;
+    --line:#2a2620;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{
+    background:var(--black);
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:8vh 6vw;
+    text-align:center;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(201,162,39,0.08), transparent 60%),
+      var(--black);
+  }
+
+  .eyebrow{
+    font-size:11px;
+    letter-spacing:0.35em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:22px;
+  }
+
+  h1{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:clamp(2.4rem, 7vw, 4.6rem);
+    line-height:0.98;
+    letter-spacing:0.01em;
+    color:var(--cream);
+    max-width:14ch;
+  }
+  h1 span{color:var(--gold-bright);}
+
+  .sub{
+    max-width:520px;
+    margin:22px auto 0;
+    font-size:16px;
+    line-height:1.55;
+    color:#c8c2b2;
+    font-weight:400;
+  }
+
+  /* route diagram — the signature element */
+  .route{
+    margin:48px 0 40px;
+    width:100%;
+    max-width:480px;
+  }
+  .route-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+  .route-row.old{
+    color:#6b6558;
+    text-decoration:line-through;
+    text-decoration-color:#5c3b2e;
+    text-decoration-thickness:1.5px;
+    margin-bottom:14px;
+    flex-wrap:wrap;
+  }
+  .route-row.old span{white-space:nowrap;}
+  .route-arrow-old{color:#5c3b2e;}
+  .route-row.new{
+    color:var(--gold-bright);
+    font-weight:700;
+    font-size:13px;
+  }
+  .route-arrow-new{color:var(--gold);font-weight:700;}
+  .route-label{
+    font-size:10px;
+    letter-spacing:0.2em;
+    color:var(--grey);
+    margin-top:10px;
+    text-transform:uppercase;
+  }
+
+  .no-list{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:44px;
+  }
+  .no-list div{
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:var(--grey);
+    font-weight:500;
+  }
+  .no-list div b{color:var(--cream);font-weight:700;}
+
+  .pitch{
+    max-width:500px;
+    font-size:15px;
+    line-height:1.6;
+    color:#c8c2b2;
+    margin-bottom:48px;
+  }
+  .pitch b{color:var(--gold-bright);font-weight:700;}
+
+  .buttons{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    width:100%;
+    max-width:340px;
+  }
+  .btn{
+    display:block;
+    width:100%;
+    padding:17px 20px;
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    text-decoration:none;
+    border-radius:2px;
+    transition:all 0.18s ease;
+    border:1.5px solid var(--gold);
+  }
+  .btn-primary{
+    background:var(--gold);
+    color:var(--black);
+  }
+  .btn-primary:hover{
+    background:var(--gold-bright);
+    border-color:var(--gold-bright);
+  }
+  .btn-secondary{
+    background:transparent;
+    color:var(--gold-bright);
+  }
+  .btn-secondary:hover{
+    background:rgba(201,162,39,0.1);
+  }
+  .btn-contact{
+    background:transparent;
+    color:var(--cream);
+    border-color:var(--line);
+  }
+  .btn-contact:hover{
+    border-color:var(--gold);
+    color:var(--gold-bright);
+  }
+
+  footer{
+    margin-top:56px;
+    font-size:10px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:#4a4536;
+  }
+
+  @media (max-width:420px){
+    .no-list{gap:16px 22px;}
+    .route-row.old{font-size:10px;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="eyebrow">Garuda X1 · Singapore Market Access</div>
+
+  <h1>We bring your brand <span>directly</span> into Singapore.</h1>
+
+  <p class="sub">No traditional wholesale route. No layers between you and the shelf. We make direct access to Singapore's FMCG market happen — and you keep the upside.</p>
+
+  <div class="route">
+    <div class="route-row old">
+      <span>Brand</span><span class="route-arrow-old">→</span>
+      <span>Distributor</span><span class="route-arrow-old">→</span>
+      <span>Wholesaler</span><span class="route-arrow-old">→</span>
+      <span>Retailer</span>
+    </div>
+    <div class="route-row new">
+      <span>Your Brand</span><span class="route-arrow-new">→</span><span>Singapore Market</span>
+    </div>
+    <div class="route-label">1,000+ stores · or direct-to-consumer</div>
+  </div>
+
+  <div class="no-list">
+    <div><b>No</b> middleman</div>
+    <div><b>No</b> markups</div>
+    <div><b>No</b> commissions</div>
+  </div>
+
+  <p class="pitch">Revenue is banked <b>directly from businesses to you.</b> You control distribution entirely, across 1,000+ stores and/or B2C. Field sales, logistics, and marketing — handled for you. One flat fee, or pick it à la carte. Whichever suits you.</p>
+
+  <div class="buttons">
+    <a class="btn btn-primary" href="https://garudax1.com" target="_blank" rel="noopener">Full Package</a>
+    <a class="btn btn-secondary" href="https://garudax1.com/feet" target="_blank" rel="noopener">Outreach Only</a>
+    <a class="btn btn-contact" href="https://wa.me/6589507099" target="_blank" rel="noopener">Contact Damon</a>
+  </div>
+
+  <footer>Garuda X1 — Singapore Market Entry</footer>
+
+</body>
+</html>
